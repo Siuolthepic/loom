@@ -1,6 +1,6 @@
-# Fabric Loom
+# QuiltMC Loom
 
-A [Gradle](https://gradle.org/) plugin to setup a deobfuscated development environment for Minecraft mods. Primarily used in the Fabric toolchain.
+A [Gradle](https://gradle.org/) plugin to setup a deobfuscated development environment for Minecraft mods. Primarily used in the QuiltMC toolchain.
 
 * Has built in support for tiny mappings (Used by [Yarn](https://github.com/FabricMC/yarn))
 * Utilises the Fernflower and CFR decompilers to generate source code with comments.
@@ -20,7 +20,7 @@ _This guide assumes you are using IntelliJ IDEA, other IDE's have not been teste
 1. Import as a Gradle project by opening the build.gradle
 2. Create a Gradle run configuration to run the following tasks `build publishToMavenLocal -x test`. This will build Loom and publish to a local maven repo without running the test suite. You can run it now.
 3. Prepare a project for using the local version of Loom:
-   * A good starting point is to clone the [fabric-example-mod](https://github.com/FabricMC/fabric-example-mod) into your working directory
+   * A good starting point is to clone the [quilt-example-mod](doesn't exist yet) into your working directory
    * Add `mavenLocal()` to the repositories:
      * If you're using `id 'org.quiltmc.loom'` inside `plugins`, the correct `repositories` block is inside `pluginManagement` in settings.gradle
      * If you're using `apply plugin:` for Loom, the correct `repositories` block is inside `buildscript` in build.gradle
